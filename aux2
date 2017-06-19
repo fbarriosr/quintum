@@ -1,0 +1,199 @@
+$("#itemPabellón option:selected" ).text();
+
+  	// Clear the content
+    $("#itemPabellón").empty().html(' ');
+
+    // And add a new value
+    var value = "";
+    $("#itemPabellón").append(
+      $("<option>disabled selected</option>").attr("value",value).text("Pabellón")
+    );
+
+
+
+	value = "4";
+    $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+
+     // Update the content clearing the caret
+    $("select").material_select('update');
+    $("select").closest('.input-field').children('span.caret').remove();
+  });
+
+
+ 	<option value="1">Pabellón 1</option>
+
+
+	 $("#itemPabellón").empty().html(' ');  // borrar 
+
+
+
+	 $("#itemPabellón option[value=3]").attr("selected", true).text();  // get text
+	 $("#itemPabellón option[value=3]").attr("selected", false).text("alissa");  // change text
+	 $('select').material_select();  // update
+
+	 $("select").material_select('update');
+ 	 $("select").closest('.input-field').children('span.caret').remove();
+
+
+
+
+     $("#itemPabellón option[value=0]").attr("selected", false).text("Titulo");  // change text
+     $("#itemPabellón option[value=1]").attr("selected", false).text("01");  // change text
+     $("#itemPabellón option[value=2]").attr("selected", false).text("02");  // change text
+     $("#itemPabellón option[value=3]").attr("selected", false).text("03");  // change text
+   
+
+     $("#itemPabellón").empty().html(' ');
+
+     $("#itemPabellón option[value=0]").attr("selected", false,"disabled",true).text("Titulo");  // change text
+ 
+     var value = "0";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+
+	 value = "1";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+     value = "2";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+
+     value = "3";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+
+     value = "4";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+     
+     value = "5";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+     
+     value = "6";
+     $("#itemPabellón").append($("<option></option>").attr("value",value).text(value))
+
+
+     $("#itemPabellón option[value=0]").attr("selected", false).text("Titulo");  // change text
+
+     $("select").material_select();
+
+
+<div id = "filtros" class="row"> 
+                  <div  class="input-field col s12 m6">
+                    <select id="itemNivelO2">
+                      <option value="" disabled selected>Nivel Final de O2</option>
+                      <option value="1">30%</option>
+                      <option value="2">25%</option>
+                      <option value="3">20%</option>
+                    </select>
+                   
+                  </div>
+                  <div  class="input-field col s12 m6">
+                    <select id="itemTipo">
+                      <option value="" disabled selected>Tipo</option>
+                      <option value="1">Tipo 1</option>
+                      <option value="2">Tipo 2</option>
+                      <option value="3">Tipo 3</option>
+                    </select>
+                  </div>  
+                  <div  class="input-field col s12 m6">
+                    <select id="itemMaxConCO2">
+                      <option value="" disabled selected>Máx. Concentración CO2</option>
+                      <option value="1">30%</option>
+                      <option value="2">25%</option>
+                      <option value="3">20%</option>
+                    </select>
+                  </div>
+                  <div  class="input-field col s12 m6">
+                    <select >
+                      <option value="" disabled selected>Máx. Concentración O2</option>
+                      <option value="1">35%</option>
+                      <option value="2">30%</option>
+                      <option value="3">25%</option>
+                    </select>
+                   
+                  </div>
+                    
+              </div>
+ 	
+
+  body
+    header
+      .navbar-fixed  
+        nav
+          .nav-wrapper
+            a#titleNavBar.brand-logo.center Login
+            ul#nav-mobile.left
+        
+    section#main-container
+     
+    footer.page-footer
+      .footer-copyright
+        .container
+          | © 2017 Quintum
+          a.grey-text.text-lighten-4.right(href='http://www.quintun.com/') WebSite
+
+    script(type='text/javascript', src='jquery-2.1.1.js')
+    script(type='text/javascript', src='materialize.js')
+    script(type='text/javascript', src='app.js')
+
+
+     header#header-container
+
+
+    <ul id="slide-out" class="side-nav">     
+      <li>
+        <div class="userView">
+          <div class="background">
+            <img src="header.png">
+          </div>
+          <a href="#!user"><img class="circle" src="adminIcon.png"></a>
+          <a href="#!name"><span class="white-text name">Admin</span></a>
+          <a href="#!email"><span class="white-text email">admin@gmail.com</span></a>
+        </div>
+      </li>
+      <li id="itemMenuTitulo">
+        <a id="itemMenuTituloLabel" href="#!">MENU</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">PLANTAS</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">FAENAS</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">PLANTA PLANTS</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">PABELLON LAYOUTS</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">CONFIGURAR PLANTA</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">SUB-SISTEMA GENERACIÓN</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">IQ</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">QUIZ REQUEST</a>
+      </li>
+      <li id="itemMenuList">
+        <a href="#!">RESULTADO CUESTIONARIO</a>
+      </li>
+    </ul>  
+
+
+    <a id="rusa2" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+
+
+
+    /*
+  $(document).ready(function (){
+    $(".button-collapse").sideNav();
+     $('#rusa2').hide();
+  });
+
+  $('#alisa').click(function(){
+     console.log("rusa loca");
+     $('#rusa2').trigger('click');
+  });
+*/
+
